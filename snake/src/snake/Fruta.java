@@ -11,22 +11,22 @@ public class Fruta {
     private Point posicao;
 
     public Fruta(int boardWidth, int boardHeight) {
-        this.posicao = getRandomPosition(boardWidth, boardHeight);
+        this.posicao = getPosicaoRandom(boardWidth, boardHeight);
     }
 
-    public Point getPosition() {
+    public Point getPosicao() {
         return posicao;
     }
 
-    public void setPosition(Point posicao) {
+    public void setPosicao(Point posicao) {
         this.posicao = posicao;
     }
 
     public void respawn(int boardWidth, int boardHeight) {
-        posicao = getRandomPosition(boardWidth, boardHeight);
+        posicao = getPosicaoRandom(boardWidth, boardHeight);
     }
 
-    private Point getRandomPosition(int boardWidth, int boardHeight) {
+    private Point getPosicaoRandom(int boardWidth, int boardHeight) {
         int x = (int) (Math.random() * boardWidth);
         int y = (int) (Math.random() * boardHeight);
         return new Point(x, y);
