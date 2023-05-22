@@ -30,11 +30,11 @@ public class Snake {
         return corpo;
     }
 
-    public int getDirection() {
+    public int getDirecao() {
         return direcao;
     }
 
-    public void setDirection(int direcao) {
+    public void setDirecao(int direcao) {
         // Verifica se a nova direção é oposta à direção atual
         if (this.direcao == 0 && direcao == 2 ||
                 this.direcao == 1 && direcao == 3 ||
@@ -45,11 +45,11 @@ public class Snake {
         this.direcao = direcao;
     }
 
-    public int getCurrentDirection() {
+    public int getDirecaoAtual() {
         return direcaoAtual;
     }
 
-    public void setCurrentDirection(int direcaoAtual) {
+    public void setDirecaoAtual(int direcaoAtual) {
         this.direcaoAtual = direcaoAtual;
     }
 
